@@ -1,0 +1,66 @@
+body{
+    /*flex allows for the buttons to dynamically change 
+    size as the webpage size is increased or decreased*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana;
+    background-color: black;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex:1;
+    padding: 10px;
+    font-size:40px;
+    font-weight: 300;
+}
+
+#output{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.btnNumber{
+    flex-basis: calc(25% - 10px);
+    margin: 5px;
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border: 0;
+    border-radius: 24px;
+    cursor: pointer;
+    color:blue;
+}
+
+.btnOperator{
+    flex-basis: calc(25% - 10px);
+    margin: 5px;
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border: 0;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: lightblue;
+    color:blueviolet;
+}
+
+.btnSpecialOperator{
+    flex-basis: calc(25% - 10px);
+    margin: 5px;
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border: 0;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: lightblue;
+    color:red;
+}
+
+

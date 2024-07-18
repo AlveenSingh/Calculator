@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- link to css file-->
+    <link rel="stylesheet" href="style.css">
+    <!-- link to js file 
+     defer tells compiler that there are other markup 
+     to be executed after script file-->
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+</head>
+<body>
+
+    <!-- display of the calc-->
+    <section id = "output">
+        <div id ="expression"></div>    
+        <div id = "answer"></div>
+    </section>
+    
+    <!-- button section
+     data-action and data-value will be passed to js
+     follow the layout of a generic calculator key layout-->
+    <section id = "input">
+        <button class = "btnNumber" data-action="number" data-value="1">1</button>
+        <button class = "btnNumber" data-action="number" data-value="2">2</button>
+        <button class = "btnNumber" data-action="number" data-value="3">3</button>
+        <button class = "btnOperator" data-action="addition" data-value="+">+</button>
+
+        <button class = "btnNumber" data-action="number" data-value="4">4</button>
+        <button class = "btnNumber" data-action="number" data-value="5">5</button>
+        <button class = "btnNumber" data-action="number" data-value="6">6</button>
+        <button class = "btnOperator" data-action="subtraction" data-value="-">-</button>
+
+        <!-- see https://symbl.cc/en/ for various symbol entities for eg. x and ÷ -->
+        <button class = "btnNumber" data-action="number" data-value="7">7</button>
+        <button class = "btnNumber" data-action="number" data-value="8">8</button>
+        <button class = "btnNumber" data-action="number" data-value="9">9</button>
+        <button class = "btnOperator" data-action="multiplication" data-value="*">&times;</button>
+
+        <button class = "btnOperator" data-action="negate" data-value="+/-">+/-</button>
+        <button class = "btnNumber" data-action="number" data-value="0">0</button>
+        <button class = "btnOperator" data-action="decimal" data-value=".">.</button>
+        <button class = "btnOperator" data-action="division" data-value="/">&divide;</button>
+        
+        <button class = "btnSpecialOperator" data-action="clearEntry" data-value="ce">CE</button>
+        <button class = "btnSpecialOperator" data-action="clear" data-value="c">C</button>
+        <button class = "btnOperator" data-action="modulus" data-value="c">%</button>
+        <button class = "btnOperator" data-action="submit" data-value="=">=</button>
+    </section>    
+    
+</body>
+</html>
+
